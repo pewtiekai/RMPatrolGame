@@ -15,10 +15,10 @@ public class BaseGameEntity {
 	protected double x;
 	protected double y;
 
-	protected velX;
-	protected velY;
-	protected moveAngle;
-	protected faceAngle;
+	protected double velX;
+	protected double velY;
+	protected double moveAngle;
+	protected double faceAngle;
 
 	public BaseGameEntity() {
 		setActive( active );
@@ -42,7 +42,7 @@ public class BaseGameEntity {
 		return y;
 	}
 
-	public double getVelX() 
+	public double getVelX() {
 		return velX;
 	}
 
@@ -59,7 +59,7 @@ public class BaseGameEntity {
 	}
 
 	public void setActive( boolean active ) {
-		this.alive = alive;
+		this.active = active;
 	}
 
 	public void setX( double x ) {

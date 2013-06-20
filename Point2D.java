@@ -11,7 +11,7 @@ public class Point2D {
 	private double x;
 	private double y;
 
-	public Point2D( int x, int y ) 
+	public Point2D( int x, int y ) {
 		setX( x );
 		setY( y );
 	}
@@ -54,7 +54,7 @@ public class Point2D {
 		this.y = ( double )y;
 	}
 
-	public void setY( double y ) 
+	public void setY( double y )  {
 		this.y = y;
 	}
 }
