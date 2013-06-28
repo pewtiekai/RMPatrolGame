@@ -45,7 +45,7 @@ public class SpriteTest extends Game {
 		sprite.setActive( true );
 
 		Point2D vel = new Point2D( 1, 0 );
-		sprite.setVelocity( vel );
+		//sprite.setVelocity( vel );
 		addSprite( sprite );
 	}
 
@@ -65,19 +65,19 @@ public class SpriteTest extends Game {
 		switch( keyCode ) {
 			case KeyEvent.VK_UP:
 				sprite.setCurrentFrame( 12 );
-				movementDir = NORTH;
+				//movementDir = NORTH;
 				break;
 			case KeyEvent.VK_DOWN:
 				sprite.setCurrentFrame( 0 );
-				movementDir = SOUTH;
+				//movementDir = SOUTH;
 				break;
 			case KeyEvent.VK_LEFT:
 				sprite.setCurrentFrame( 4 );
-				movementDir = WEST;
+				//movementDir = WEST;
 				break;
 			case KeyEvent.VK_RIGHT:
 				sprite.setCurrentFrame( 8 );
-				movementDir = EAST;
+				//movementDir = EAST;
 				break;
 		}
 
@@ -101,7 +101,7 @@ public class SpriteTest extends Game {
 	}
 
 	public void spriteUpdate( Sprite sprite ) {
-		switch( movementDir ) {
+		/*switch( movementDir ) {
 			case NORTH:
 				if( sprite.getCurrentFrame() == 0 ) {
 					sprite.setCurrentFrame( 12 );
@@ -113,7 +113,7 @@ public class SpriteTest extends Game {
 
 			case EAST:
 			break;
-		}
+		}*/
 	}
 
 	public void spriteDraw( Sprite sprite ) {
